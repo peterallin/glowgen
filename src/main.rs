@@ -2,7 +2,7 @@ use image::{RgbaImage, ImageBuffer, Rgba, DynamicImage};
 use std::error::Error;
 
 fn dist2alpha(size: i32, dist: f32) -> u8 {
-    if dist > size as f32 / 2.0 
+    if dist > size as f32 / 2.0 {
         0
     } else {
         255 - dist as u8 * 15
